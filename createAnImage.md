@@ -38,13 +38,13 @@ docker login
 Retag the image for dockerhub  
 (replace MYDOCKERUSERNAME with your dockerhub username)
 ```shell
-docker tag mydvwa:v1 cvdabbeele/mydvwa_test:v001
+docker tag mydvwa:v1 [MYDOCKERUSERNAME]/mydvwa_test:v001
 ```
 
 Push the image to dockerhub
 ```shell
-docker push cvdabbeele/mydvwa_test:v001
-docker push cvdabbeele/mydvwa_test:latest
+docker push [MYDOCKERUSERNAME]/mydvwa_test:v001
+docker push [MYDOCKERUSERNAME]/mydvwa_test:latest
 ```
 
 Check on dockerhub if you see your image  
