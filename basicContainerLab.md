@@ -1,6 +1,6 @@
 From your bash terminal, run an NGINX container and expose it at port 8080
 ```shell
-  docker container run -p 8080:80 -d nginx 
+docker container run -p 8080:80 -d nginx 
 ```
 test it:
 Find the public IP of the EC2instance that runs your cloud9  
@@ -16,7 +16,7 @@ Browse to it
 
 Find the container-ID of that container  
 ```shell
-  docker ps 
+docker ps 
 ```
 Run an Alpine container
 ```shell
@@ -33,14 +33,14 @@ Can you explain what happened?
 
 Find the images on your host
 ```shell
-  docker image ls
+docker image ls
 ```
 
 Stop and delete all running containers
 ```shell
-  docker ps
-  docker stop [CONTAINER-ID]
-  docker rm [CONTAINER-ID] [CONTAINER-ID] [CONTAINER-ID] 
+docker ps
+docker stop [CONTAINER-ID]
+docker rm [CONTAINER-ID] [CONTAINER-ID] [CONTAINER-ID] 
 ```
 Delete all local images
 ```shell
