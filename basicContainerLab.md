@@ -16,7 +16,7 @@ Browse to it
 
 Find the container-ID of that container  
 ```shell
-docker ps 
+docker ps  
 ```
 Run an Alpine container
 ```shell
