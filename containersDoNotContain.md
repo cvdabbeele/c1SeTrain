@@ -2,8 +2,7 @@ From your bash terminal, run an NGINX container and expose it at port 8080
 ```shell
   docker container run -p 8080:80 -d nginx 
 ```
- testerdetest
-
+ 
 ## Test 1: the filesystem in the container is carved-out of the filesystem of the host
 Find the ID of that container  
 The second line exports the IDs of all containers that match the command to an array called MYCONTAINERID
