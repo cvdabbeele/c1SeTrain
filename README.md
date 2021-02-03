@@ -1,7 +1,7 @@
 ## contents
 
-- [basicContainerlab](basicContainerlab)  
-- [containersDoNotContain](containersDoNotContain)  
-- [createAnImage](createAnImage)    
-- [c1asLambdaDemoHelloWorldSetup](c1asLambdaDemoHelloWorldSetup)  
-- [howToDemoHelloWorld](howToDemoHelloWorld)  
+- [basicContainerlab](basicContainerlab.md)  
+- [containersDoNotContain](containersDoNotContain.md)  
+- [createAnImage](createAnImage.md)    
+- [c1asLambdaDemoHelloWorldSetup](c1asLambdaDemoHelloWorldSetup.md)  
+- [howToDemoHelloWorld](howToDemoHelloWorld.md)  
