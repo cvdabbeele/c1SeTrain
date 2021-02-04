@@ -45,6 +45,11 @@ docker tag mydvwa:v1 [MYDOCKERUSERNAME]/mydvwa_test:v001
 Push the image to dockerhub
 ```shell
 docker push [MYDOCKERUSERNAME]/mydvwa_test:v001
+```
+Now tag again, but with the tag "latest" and push to dockerhub.  Please note that images with the tag "latest" are not necessarily the latest versions. They are just images with a tag "lagest",
+
+```shell
+docker tag mydvwa:v1 [MYDOCKERUSERNAME]/mydvwa_test:latest
 docker push [MYDOCKERUSERNAME]/mydvwa_test:latest
 ```
 
