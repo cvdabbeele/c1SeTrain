@@ -15,6 +15,7 @@ Between line 19 and line 20 add the following lines:
 ![modifiedDockerfile](images/modifiedDockerfile.png) 
 
 Build an image and tag it  
+safe the file  
 The dot refers to all files in the local directory  
 "Dockerfile", with a capital "D" is the default name for a dockerfile  
 The "-t" parameter tags the image with the name "mydvwa" and version "v1"  
