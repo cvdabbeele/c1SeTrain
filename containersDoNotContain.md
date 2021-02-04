@@ -66,7 +66,7 @@ A way to ensure that data survives the container is by using "volumes" in docker
 ```     
   Create a new file in the container and exit
  ```shell
-  echo "test" > myFileInTheContainer.txt
+  echo "test" > /tmp/myFileInTheContainer.txt
   exit
   ls -latr ~/myPersistentDir
 ```
