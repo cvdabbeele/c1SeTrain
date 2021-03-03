@@ -1,10 +1,13 @@
+## run an nginx container  v
 From your bash terminal, run an NGINX container and expose it at port 8080
 ```shell
 docker container run -p 8080:80 -d nginx 
 ```
-test it:
-Find the public IP of the EC2instance that runs your cloud9  
-An easier way may be to run the following
+## test it:   
+Find the public IP of your Cloud9 environment:  
+Cloud9 environments are basically EC2instances.  So, go to AWS https://eu-central-1.console.aws.amazon.com  (you may have to change the region to the region where you started the Cloud9 environment) and find the EC2 instance that starts with "aws-cloud9-"   
+Find its IP address at the bottom half of the page under *Details* -> *Instance summary*    
+An easier way may be to run the following in your Cloud9 shell
 ```shell
 myip="$(dig +short myip.opendns.com @resolver1.opendns.com)"
 echo "My WAN/Public IP address: ${myip}"

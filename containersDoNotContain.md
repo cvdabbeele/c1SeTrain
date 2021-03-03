@@ -1,11 +1,13 @@
+## Start a container
 From your bash terminal, run an NGINX container and expose it at port 8080
 ```shell
   docker container run -p 8080:80 -d nginx 
 ```
  
 ## Test 1: the filesystem in the container is carved-out of the filesystem of the host
-Find the ID of that container  
-The second line exports the IDs of all containers that match the command to an array called MYCONTAINERID
+###Find the ID of that container  
+You can do "docker ps" and read the container-ID
+Or, type the following commands to create a variable $MYCONTAINERID which will contain the ID of your nginx container.
 ```shell
   docker ps | grep -i nginx
   export MYCONTAINERID=(`docker ps | grep -i nginx | awk '{ print $1 }' `)
@@ -48,13 +50,15 @@ You will see the file showing up on the host in one of the overlay directories. 
 ![dockerRmSudoFind](images/dockerRmSudoFind.png)
 
 ## Test 3: enabling persistence
-A way to ensure that data survives the container is by using "volumes" in docker
+A way to ensure that data survives the container is by using "volumes" in docker  
+Let's make a directory that we will use for persistent storage of our NGINX container
+And create a file in it.
 
 ```shell
   mkdir ~/myPersistentDir
   echo "test" > ~/myPersistentDir/myFileOnTheHost.txt
 ```
-  Start a container and map `~/myPersistentDir` from the host to `/tmp` in the container
+  Start a new container, based on the same nginx image, but this time map `~/myPersistentDir` from the host to `/tmp` in the container
 ```shell
   docker run -v ~/myPersistentDir:/tmp -p 8080:80 -d nginx 
   docker exec -it [CONTAINER_ID] bash
@@ -70,7 +74,7 @@ A way to ensure that data survives the container is by using "volumes" in docker
   exit
   ls -latr ~/myPersistentDir
 ```
-The file has been created on the host in `~/myPersistentDir/myFileInTheContainer.txt`
+The file has been created on the host in `~/myPersistentDir/myFileInTheContainer.txt`  
 After stopping the container, the file is still there
  ```shell
     docker stop [CONTAINER_ID]
