@@ -6,7 +6,7 @@ Go to https://github.com/citizen-stig/dockerdvwa/blob/master/Dockerfile and clic
 ![raw](images/raw.png) 
 
 Paste that contents in your new file in Cloud9  
-Safe the file   
+Save the file   
 (-> File -> Save) and name it Dockerfile (with a capital D)  
 ![dockerfile](images/dockerfile.png) 
 
@@ -16,7 +16,7 @@ Mind the "\" at the end of the lines; this incicates that the RUN command from t
 `wget https://secure.eicar.org/eicar.com -O /app/logo.jpg && \`
 ![modifiedDockerfile](images/modifiedDockerfile.png) 
 
-Safe the file   
+Save the file   
 
 ## Build an image and tag it  
 
