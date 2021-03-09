@@ -1,6 +1,6 @@
 ## Objectives
 This lab shows that, unlike with _VMs_, files that are created inside a _Container_ are visible on the container host.  
-![containersDoNotContain](images/containersDoNotContain.png =300x200)  
+![containersDoNotContain](images/containersDoNotContain.png)  
 
 ## Start a container
 From your bash terminal, run an NGINX container and expose it at port 8080
