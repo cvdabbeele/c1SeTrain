@@ -32,7 +32,7 @@ cp c1asLambdaDemoHelloWorld.yml.sample c1asLambdaDemoHelloWorld.yml
 Edit `c1asLambdaDemoHelloWorld.yml` 
    and substitute your values for the TREND_AP_KEY and TREND_AP_SECRET 
    
-4. Deploy the `c1asLambdaDemoHelloWorld` CloudFormation stack 
+4. Deploy the `c1asLambdaDemoHelloWorld` CloudFormation stack   
 Open a new browser tab and login to AWS  
 In the AWS Console go to -> Services -> CloudFormation -> Create stack: with new resources
 - under "Prerequisite - Prepare template", select `template is ready`
