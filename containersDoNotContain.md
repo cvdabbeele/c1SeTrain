@@ -8,7 +8,7 @@ From your bash terminal, run an NGINX container and expose it at port 8080
   docker container run -p 8080:80 -d nginx 
 ```
  
-## Test 1: the filesystem in the container is carved-out of the filesystem of the host
+## Test 1: The filesystem in the container is carved-out of the filesystem of the host
 ###Find the ID of that container  
 You can do "docker ps" and read the container-ID
 Or, type the following commands to create a variable $MYCONTAINERID which will contain the ID of your nginx container.
@@ -37,7 +37,7 @@ sudo find / -name mydummytestfile.txt
 You will see the file showing up on the host in one of the overlay directories.  The filesystem in the container is carved-out of the filesystem of the host  
 ![fileFromContainerIsOnHost](images/fileFromContainerIsOnHost.png)
 
-## Test 2: if a container dies, its data is gone as well
+## Test 2: If a container dies, its data is gone as well
 
 ### Stopping the container, deletes the files in "merged"
 ```shell
@@ -53,7 +53,7 @@ You will see the file showing up on the host in one of the overlay directories. 
 ```
 ![dockerRmSudoFind](images/dockerRmSudoFind.png)
 
-## Test 3: enabling persistence
+## Test 3: Enabling persistence
 A way to ensure that data survives the container is by using "volumes" in docker  
 Let's make a directory that we will use for persistent storage of our NGINX container
 And create a file in it.
