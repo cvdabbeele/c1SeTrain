@@ -14,7 +14,7 @@
 1. Clone this repo  
 cd to your projects directory
 ```shell
-git clone
+git clone https://github.com/cvdabbeele/c1SeTrain.git
 cd c1asHelloWorld
 ```
 
