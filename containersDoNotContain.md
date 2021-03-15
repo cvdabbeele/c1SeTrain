@@ -91,3 +91,31 @@ And even after removing the container, the file is still there
  ```
 
 ![dockerVolumes](images/dockerVolumes.png)
+
+## Test 4: Processes inside a container can be seen by the host
+We just saw that _files_ from inside the container can be seen on the host.  Now let's take a look at the processes.  
+On the host, run the following command to see if there are any `nginx` processes running. 
+```
+ps -ef | grep -i nginx
+```
+There are no nginx processes running on the host.  (if you see any nginx processes running; verify that all your nginx containers are stopped)  
+
+Start an nginx container and verify that it is running
+```shell
+  docker run -v ~/myPersistentDir:/tmp -p 8080:80 -d nginx 
+  docker ps
+```
+Check the host again for any running nginx processes
+```
+  ps -ef | grep -i nginx
+```
+What you are seeing are the nginx processes from the container  
+To validate, stop the container and check for nginx processes again  
+```
+  docker ps                 # this will show the CONTAINER_ID
+  docker stop  ONTAINER_ID  #replace CONTAINER_ID with ID of your container
+  ps -ef | grep -i nginx    
+```
+And, again, the nginx processed have dissapeared 
+
+
