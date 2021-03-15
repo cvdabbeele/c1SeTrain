@@ -52,7 +52,7 @@ Now, let's deploy it locally.
 For the password, use e.g. "Tr3ndm1cr0!"  
 
 ```shell
-$ docker run -d -p 8000:8000 -e "SPLUNK_START_ARGS=--accept-license" -e "SPLUNK_PASSWORD=Tr3dmicro!" --name splunk splunk/splunk:latest
+$ docker run -d -p 8000:8000 -e "SPLUNK_START_ARGS=--accept-license" -e "SPLUNK_PASSWORD=Tr3ndmicro!" --name splunk splunk/splunk:latest
 ```
 Port 8000 should already be opened in the Security Group in the previous step.  
 From your workstation, browse to it  

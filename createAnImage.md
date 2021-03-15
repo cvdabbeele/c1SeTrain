@@ -51,7 +51,7 @@ Push the image to dockerhub
 ```shell
 docker push MYDOCKERUSERNAME/mydvwa_test:v001
 ```
-Now tag it again, but now with the tag "latest" and push it again to dockerhub.  Please note that images with the tag "latest" are not necessarily the latest versions. They are just images with a tag "lagest"
+Now tag it again, but now with the tag "latest" and push it again to dockerhub.  Please note that images with the tag "latest" are not necessarily the latest versions. They are just images with a tag "latest"
 
 ```shell
 docker tag mydvwa:v1 MYDOCKERUSERNAME/mydvwa_test:latest
