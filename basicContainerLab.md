@@ -1,4 +1,4 @@
-## run an nginx container  v
+## run an nginx container  
 From your bash terminal, run an NGINX container and expose it at port 8080
 ```shell
 docker container run -p 8080:80 -d nginx 
