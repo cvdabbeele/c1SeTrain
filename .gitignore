@@ -1,11 +1,16 @@
-
 .env
 work/
 backup-*/
-.remote-sync.json
-*.tmp
-*.code-workspace
-*.bak
+*.old
 *.zip
+.*
+*.tmp
+*.bak
+*.pem
+*.key
+*.crt
+*.code-workspace
+.remote-sync.json
 
+c1asLambdaDemoHelloWorld.yml
 
