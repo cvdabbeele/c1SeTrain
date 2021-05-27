@@ -23,6 +23,8 @@ Open the docker-compose file in the grafical editor of cloud9
 ![docker-compose-yml](images/docker-compose-yml.png)
 
 ### Build the containers with one single command
+The following command looks for a docker-compose.yml file in the default directory and then "builds" it.   
+
 ```shell
 docker-compose build
 ```
