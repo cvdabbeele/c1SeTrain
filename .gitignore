@@ -11,6 +11,6 @@ backup-*/
 *.crt
 *.code-workspace
 .remote-sync.json
-
+.DS_Store
 c1asLambdaDemoHelloWorld.yml
 
