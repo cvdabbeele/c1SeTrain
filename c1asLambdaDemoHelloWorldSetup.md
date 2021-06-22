@@ -11,11 +11,11 @@
 
 ## Detailed setup steps
 
-1. Clone this repo  
-cd to your projects directory
+1. Clone this repo  (if not already done so)
+cd to your projects directory 
 ```shell
 git clone https://github.com/cvdabbeele/c1SeTrain.git
-cd c1asHelloWorld
+cd c1SeTrain
 ```
 
 2. In C1AS, create a new group for the lambda function  
@@ -81,7 +81,7 @@ You should see a webpage as in the screenshot below
    
 9.  An API gateway has been deployed for this function.  You can find the API endpoint by clicking on `API gateway` as indicated in the screenshot below, and then expanding the `Details` header.  ![apiGateway](images/apiGateway.png)  Keep in mind that the first time that you trigger this Lambda function, it may take a few extra seconds.  This is because AWS has to deploy a container for the function to run in.  
     
-10. You can find a demo/test scenario in [howToDemo.md](howToDemo.md) in this repo
+10. You can find a demo/test scenario in [howToDemo.md](howToDemoHelloWorld.md) in this repo
     
 11. Tear down  
     There is no need to tear down this environment to cut costs.  Lambda functions are only billed when they run.
