@@ -88,8 +88,15 @@ To find the public ip of your cloud 9 instance, run the following curl command:
 curl http://checkip.amazonaws.com
 ```
 
-Then, to allow access to your webserver, open up port 8080 in your AWS Security groups  
-AWS console (e.g. https://eu-central-1.console.aws.amazon.com/) -> ensure you are in the right region (see drop-down box at the right top of the screen) Services -> type: EC2 -> find the EC2 instance that is behind your Cloud9 and select it.   At the lower half of the screen, open the "Security" tab and under "Security Group", click on the hotlink to open the security group   
+Then, to allow access to your webserver, open up port 8080 in your AWS Security groups.  Follow the steps in the screenshot below  
+From the AWS console (e.g. https://eu-central-1.console.aws.amazon.com/) 
+1. type: EC2 
+2. ensure you are in the right region (see drop-down box at the right top of the screen) Services 
+3.  find the EC2 instance that is behind your Cloud9 and select it.  
+4.  At the lower half of the screen, open the "Security" tab and under "Security Group", 
+5.  click on the hotlink to open the security group   
+![awsEc2SecurityGroup](images/awsEc2SecurityGroup.png)
+
 Once in the security group, select the tab "Inbound Rules" and click on the "Edit Inbound rules" box  
 Add rule -> Port=8080, Source IP = MyIP as indicated below 
 ![awsSgAddInboundRule](images/awsSgAddInboundRule.png)
