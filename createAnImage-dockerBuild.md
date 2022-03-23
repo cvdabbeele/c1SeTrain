@@ -11,8 +11,8 @@ Save the file
 (-> File -> Save) and name it Dockerfile (with a capital D)
 ![dockerfile](images/dockerfile.png)
 
-Between lines 19 and 20 add the following lines:
-Mind the "\" at the end of the lines; this incicates that the RUN command from the Dockerfile continues)
+Between lines 19 and 20 add the following lines:  
+Mind the "\" at the end of the lines; this incicates that the RUN command from the Dockerfile continues)  
 `sed -ri -e "s/Damn Vulnerable/my very vulnerable/" /app/index.php && \`
 ![modifiedDockerfile](images/modifiedDockerfile.png)
 
