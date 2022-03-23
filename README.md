@@ -1,5 +1,8 @@
 ## contents
-
+clone this repo with the following command
+```bash
+git clone https://github.com/cvdabbeele/c1SeTrain
+```
 # Docker basic labs
 - [basicContainerlab](basicContainerLab.md)  
 - [containersDoNotContain](containersDoNotContain.md)  
