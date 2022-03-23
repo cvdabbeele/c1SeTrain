@@ -14,7 +14,6 @@ Save the file
 Between lines 19 and 20 add the following lines:
 Mind the "\" at the end of the lines; this incicates that the RUN command from the Dockerfile continues)
 `sed -ri -e "s/Damn Vulnerable/my very vulnerable/" /app/index.php && \`
-`wget https://secure.eicar.org/eicar.com -O /app/logo.jpg && \`
 ![modifiedDockerfile](images/modifiedDockerfile.png)
 
 Save the file
