@@ -1,3 +1,4 @@
+# This project has been deprecated in June 2022
 ## contents
 clone this repo with the following command
 ```bash
